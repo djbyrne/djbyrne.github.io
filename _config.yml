@@ -7,17 +7,19 @@ gems:
 # THEME-SPECIFIC CONFIGURATION
 title: Donal Byrne                                   # site's title
 description: "Personal Blog"      # used by search engines
-avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
-favicon: assets/favicon.ico                             # Icon displayed in the tab
+avatar: assets/img/pexels/db_icon.png                         # Empty for no avatar in navbar
+favicon: assets/img/pexels/db_icon.png                             # Icon displayed in the tab
 
 # Header and footer text
-header_text: Donal Byrne  # Change Blog header text
-header_feature_image: assets/img/pexels/triangular.jpeg
+header_text: <h2> Welcome to my blog! <h2> <br />
+             <h3>I like to write about what I am learning in AI, <br />
+             software engineering and everything else in between <h3>
+header_feature_image: assets/img/pexels/forrest_bg_blur.jpg
 footer_text: >
   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
 # Blog
-excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
+excerpt: truncate                                           # Or "truncate" (first 250 characters), "false" to disable
 post_navigation: true
 color_image: /assets/img/lineart.png                    # A bit transparent for color posts.
 
@@ -36,10 +38,10 @@ paginate: 5
 paginate_path: "/blog/page:num"
 
 # PORTFOLIO
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:name
+#collections:
+#  portfolio:
+#    output: true
+#    permalink: /:collection/:name
 
 # BUILD SETTINGS
 markdown: kramdown

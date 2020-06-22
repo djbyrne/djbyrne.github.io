@@ -1,3 +1,7 @@
-- authors: John Smith
-  title: A Title About Citations
+- authors: Richard Sutton, Andrew Barto
+  title: Reinforcement Learning An Introduction (Second Edition)
   key: ref1
+
+- authors: Maxim Lapan
+  title: Deep Reinforcement Learning Hands-On (Second Edition)
+  key: ref2

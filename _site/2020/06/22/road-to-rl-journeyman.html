@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<!--
+    Type on Strap jekyll theme v2.2.1
+    Copyright 2016-2019 Sylhare
+    Theme free for personal and commercial use under the MIT license
+    https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
+    <script defer=true src="/assets/js/main.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/img/pexels/db_icon.png" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://localhost:4000/2020/06/22/road-to-rl-journeyman.html">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="Donal Byrne" href="http://localhost:4000/feed.xml"/>
+    
+    
+
+    <!-- KaTeX 0.8.3 -->
+    <!-- if you have any issue check https://github.com/KaTeX/KaTeX -->
+    
+    <script src="/assets/js/vendor/katex.min.js"></script>
+    
+
+    <!-- Google Analytics -->
+    
+    <!-- End Google Analytics -->
+
+    <!-- seo tags -->
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>The Road To RL Journeyman | Donal Byrne</title>
+<meta name="generator" content="Jekyll v4.1.0" />
+<meta property="og:title" content="The Road To RL Journeyman" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Since leaving college 2 years ago I have been working as an ML engineer in high performing environment with people much smarter and more capable than myself. Due to this I have had to put in a lot of time ramping up my own core ML and software engineering skills in order to keep up. This hasn’t left a lot of room for my real passion, Reinforcement Learning. Although I still have a lot to learn, even in some of the foundational topics, I want to prioritize some time to focus on the area im passionate. RL is what got me into ML in the first place and looking back over the last two years, I haven’t made as much progress in this area as I would like, even if I have progressed a lot in other areas. This leads me to the point of this article. I am setting myself a goal moving from an RL novice, to an Expert! The Goal Alright, expert may be a bit of a stretch, but its nice to have goals. My goal, is to spend the rest of the 2020 focusing on studying RL and achieving journeyman status. Journeyman: A journeyman is a worker, skilled in a given trade or craft, who has successfully completed an official apprenticeship. Currently there are 194 days left in 2020, which is roughly 27 weeks. My goal is to speen at least 1 hour a day Mon-Fri and 6 hours over Sat-Sun studying. This will give me ~11 hours per work to focus on studying, which is ~297 hours in total before 2021. Now this may sound like a lot of time, but really its not when you consider that it takes around 10,000 hours to master a skill. This is merely setting the foundation for my journey in RL. Also, I actually started a lot of this work a little under a month ago even before I set myself this challenge when I started working on my current RL repo, so that adds another 44 hours to my total timeline. The repo will all the algorithms I have learned and implemented can be found here https://github.com/djbyrne/core_rl The Plan Although I have done several RL side projects and covered a lot of the major algorithms at work or at home, I always focused on implimenting algorithms quickly and put less focus into fully understanding the core principles. To ensure that there are no gaps in my knowledge, I plan to start from the beginning with simple tabluar tabular methods and work my way up. Buts not all. Not only do I want to increase my knowledge of RL, I want to gain practical experience of building RL that not high performing and high quality. This means that every RL technique I study I want to also implement and try and reproduce the results shown in the accompanying paper. In order to ensure a strong understanding of my subject I have created the following guide for studying the various algorithms and techniques of reinforcement learning. I have dubbed this guide, the “Learning Protocol”. Learning Protocol The learning protocol is a set of rules and steps that I have set out to ensure the understanding and profficiency of a topic. I can only consider a topic “complete” once I have gone through each of these steps. High Level Understanding: blog posts, articles, videos, talks, presentations Low Level Understanding: Papers, Algorithms Code Review: GitHub Repos, Tutorials Reimplementation: Recreate model and results Algorithm Explanation: ReadMe, blog post, presentation/talk The idea behind these steps is that it goes from a high level base understanding, all the way down to a full low level understanding of the full algorithm. In order to fully understand something I believe you need to be able to implement it and also be able to explain it simply. Similarly to the general learning guide, I have a set of steps/requirements for my implementations. Implementation Protocol All model implementations must complete the following requirements before they are considered complete Modular Design: code is broken up until logical units. Generally no longer than 20 lines Fully Tested: All core elements must be tested. Core elements are anything that is critical to the models learning or is planned to be re-used in further work. i.e pretty much all of it. Ideally, all models will be built with TDD principles Documented: I doubt that I will take the time to generate full documentation, but all models will have relevant docstrings, type annotations and most importantly, a ReadMe explaining the key points of the model Results &amp; Metrics: All models will be run with a series of KPI metrics for both model quality and performance. The will then be compared to a baseline when applicable. Implemented in Lightning: Pytorch Lightning is a fantastic library that helps to enforce standards, reproducability and simplicity when build models. Learning Plan I have previously fallen into the common trap of jumping from one topic to another while studying ML and not really finishing a topic or project to completion. To start to research a topic, find some good resources and get to work, but a few days later I find a “better” resource or I find a “better” topic. To avoid this I have set up a curriculum for myself that I am going to follow until completion. As well as this I have set out a loose study plan. I say loose because the standards I have set are high and I dont really have a huge amount of time, so anything schedules or timelines I set here are just best guesses and could quickly change. Schedule Week 1: Tabular Methods Week 2-3: DQN Methods Week 4: Policy Gradients Week 5-6: Performance Improvements Week 7-9: Actor Critic Methods Week 10-12: DPG Methods Week 12-14: PPO Week 14-16: SAC Week 17-18: AlphaZero Week 19-20: MuZero Week 21-22: Curiosity Driven Methods Week 23-N: Time Buffer (Clean Up, Refactoring, Running experiments) Curriculum" />
+<meta property="og:description" content="Since leaving college 2 years ago I have been working as an ML engineer in high performing environment with people much smarter and more capable than myself. Due to this I have had to put in a lot of time ramping up my own core ML and software engineering skills in order to keep up. This hasn’t left a lot of room for my real passion, Reinforcement Learning. Although I still have a lot to learn, even in some of the foundational topics, I want to prioritize some time to focus on the area im passionate. RL is what got me into ML in the first place and looking back over the last two years, I haven’t made as much progress in this area as I would like, even if I have progressed a lot in other areas. This leads me to the point of this article. I am setting myself a goal moving from an RL novice, to an Expert! The Goal Alright, expert may be a bit of a stretch, but its nice to have goals. My goal, is to spend the rest of the 2020 focusing on studying RL and achieving journeyman status. Journeyman: A journeyman is a worker, skilled in a given trade or craft, who has successfully completed an official apprenticeship. Currently there are 194 days left in 2020, which is roughly 27 weeks. My goal is to speen at least 1 hour a day Mon-Fri and 6 hours over Sat-Sun studying. This will give me ~11 hours per work to focus on studying, which is ~297 hours in total before 2021. Now this may sound like a lot of time, but really its not when you consider that it takes around 10,000 hours to master a skill. This is merely setting the foundation for my journey in RL. Also, I actually started a lot of this work a little under a month ago even before I set myself this challenge when I started working on my current RL repo, so that adds another 44 hours to my total timeline. The repo will all the algorithms I have learned and implemented can be found here https://github.com/djbyrne/core_rl The Plan Although I have done several RL side projects and covered a lot of the major algorithms at work or at home, I always focused on implimenting algorithms quickly and put less focus into fully understanding the core principles. To ensure that there are no gaps in my knowledge, I plan to start from the beginning with simple tabluar tabular methods and work my way up. Buts not all. Not only do I want to increase my knowledge of RL, I want to gain practical experience of building RL that not high performing and high quality. This means that every RL technique I study I want to also implement and try and reproduce the results shown in the accompanying paper. In order to ensure a strong understanding of my subject I have created the following guide for studying the various algorithms and techniques of reinforcement learning. I have dubbed this guide, the “Learning Protocol”. Learning Protocol The learning protocol is a set of rules and steps that I have set out to ensure the understanding and profficiency of a topic. I can only consider a topic “complete” once I have gone through each of these steps. High Level Understanding: blog posts, articles, videos, talks, presentations Low Level Understanding: Papers, Algorithms Code Review: GitHub Repos, Tutorials Reimplementation: Recreate model and results Algorithm Explanation: ReadMe, blog post, presentation/talk The idea behind these steps is that it goes from a high level base understanding, all the way down to a full low level understanding of the full algorithm. In order to fully understand something I believe you need to be able to implement it and also be able to explain it simply. Similarly to the general learning guide, I have a set of steps/requirements for my implementations. Implementation Protocol All model implementations must complete the following requirements before they are considered complete Modular Design: code is broken up until logical units. Generally no longer than 20 lines Fully Tested: All core elements must be tested. Core elements are anything that is critical to the models learning or is planned to be re-used in further work. i.e pretty much all of it. Ideally, all models will be built with TDD principles Documented: I doubt that I will take the time to generate full documentation, but all models will have relevant docstrings, type annotations and most importantly, a ReadMe explaining the key points of the model Results &amp; Metrics: All models will be run with a series of KPI metrics for both model quality and performance. The will then be compared to a baseline when applicable. Implemented in Lightning: Pytorch Lightning is a fantastic library that helps to enforce standards, reproducability and simplicity when build models. Learning Plan I have previously fallen into the common trap of jumping from one topic to another while studying ML and not really finishing a topic or project to completion. To start to research a topic, find some good resources and get to work, but a few days later I find a “better” resource or I find a “better” topic. To avoid this I have set up a curriculum for myself that I am going to follow until completion. As well as this I have set out a loose study plan. I say loose because the standards I have set are high and I dont really have a huge amount of time, so anything schedules or timelines I set here are just best guesses and could quickly change. Schedule Week 1: Tabular Methods Week 2-3: DQN Methods Week 4: Policy Gradients Week 5-6: Performance Improvements Week 7-9: Actor Critic Methods Week 10-12: DPG Methods Week 12-14: PPO Week 14-16: SAC Week 17-18: AlphaZero Week 19-20: MuZero Week 21-22: Curiosity Driven Methods Week 23-N: Time Buffer (Clean Up, Refactoring, Running experiments) Curriculum" />
+<link rel="canonical" href="http://localhost:4000/2020/06/22/road-to-rl-journeyman.html" />
+<meta property="og:url" content="http://localhost:4000/2020/06/22/road-to-rl-journeyman.html" />
+<meta property="og:site_name" content="Donal Byrne" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-06-22T00:00:00+01:00" />
+<script type="application/ld+json">
+{"dateModified":"2020-06-22T00:00:00+01:00","datePublished":"2020-06-22T00:00:00+01:00","@type":"BlogPosting","headline":"The Road To RL Journeyman","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/06/22/road-to-rl-journeyman.html"},"url":"http://localhost:4000/2020/06/22/road-to-rl-journeyman.html","description":"Since leaving college 2 years ago I have been working as an ML engineer in high performing environment with people much smarter and more capable than myself. Due to this I have had to put in a lot of time ramping up my own core ML and software engineering skills in order to keep up. This hasn’t left a lot of room for my real passion, Reinforcement Learning. Although I still have a lot to learn, even in some of the foundational topics, I want to prioritize some time to focus on the area im passionate. RL is what got me into ML in the first place and looking back over the last two years, I haven’t made as much progress in this area as I would like, even if I have progressed a lot in other areas. This leads me to the point of this article. I am setting myself a goal moving from an RL novice, to an Expert! The Goal Alright, expert may be a bit of a stretch, but its nice to have goals. My goal, is to spend the rest of the 2020 focusing on studying RL and achieving journeyman status. Journeyman: A journeyman is a worker, skilled in a given trade or craft, who has successfully completed an official apprenticeship. Currently there are 194 days left in 2020, which is roughly 27 weeks. My goal is to speen at least 1 hour a day Mon-Fri and 6 hours over Sat-Sun studying. This will give me ~11 hours per work to focus on studying, which is ~297 hours in total before 2021. Now this may sound like a lot of time, but really its not when you consider that it takes around 10,000 hours to master a skill. This is merely setting the foundation for my journey in RL. Also, I actually started a lot of this work a little under a month ago even before I set myself this challenge when I started working on my current RL repo, so that adds another 44 hours to my total timeline. The repo will all the algorithms I have learned and implemented can be found here https://github.com/djbyrne/core_rl The Plan Although I have done several RL side projects and covered a lot of the major algorithms at work or at home, I always focused on implimenting algorithms quickly and put less focus into fully understanding the core principles. To ensure that there are no gaps in my knowledge, I plan to start from the beginning with simple tabluar tabular methods and work my way up. Buts not all. Not only do I want to increase my knowledge of RL, I want to gain practical experience of building RL that not high performing and high quality. This means that every RL technique I study I want to also implement and try and reproduce the results shown in the accompanying paper. In order to ensure a strong understanding of my subject I have created the following guide for studying the various algorithms and techniques of reinforcement learning. I have dubbed this guide, the “Learning Protocol”. Learning Protocol The learning protocol is a set of rules and steps that I have set out to ensure the understanding and profficiency of a topic. I can only consider a topic “complete” once I have gone through each of these steps. High Level Understanding: blog posts, articles, videos, talks, presentations Low Level Understanding: Papers, Algorithms Code Review: GitHub Repos, Tutorials Reimplementation: Recreate model and results Algorithm Explanation: ReadMe, blog post, presentation/talk The idea behind these steps is that it goes from a high level base understanding, all the way down to a full low level understanding of the full algorithm. In order to fully understand something I believe you need to be able to implement it and also be able to explain it simply. Similarly to the general learning guide, I have a set of steps/requirements for my implementations. Implementation Protocol All model implementations must complete the following requirements before they are considered complete Modular Design: code is broken up until logical units. Generally no longer than 20 lines Fully Tested: All core elements must be tested. Core elements are anything that is critical to the models learning or is planned to be re-used in further work. i.e pretty much all of it. Ideally, all models will be built with TDD principles Documented: I doubt that I will take the time to generate full documentation, but all models will have relevant docstrings, type annotations and most importantly, a ReadMe explaining the key points of the model Results &amp; Metrics: All models will be run with a series of KPI metrics for both model quality and performance. The will then be compared to a baseline when applicable. Implemented in Lightning: Pytorch Lightning is a fantastic library that helps to enforce standards, reproducability and simplicity when build models. Learning Plan I have previously fallen into the common trap of jumping from one topic to another while studying ML and not really finishing a topic or project to completion. To start to research a topic, find some good resources and get to work, but a few days later I find a “better” resource or I find a “better” topic. To avoid this I have set up a curriculum for myself that I am going to follow until completion. As well as this I have set out a loose study plan. I say loose because the standards I have set are high and I dont really have a huge amount of time, so anything schedules or timelines I set here are just best guesses and could quickly change. Schedule Week 1: Tabular Methods Week 2-3: DQN Methods Week 4: Policy Gradients Week 5-6: Performance Improvements Week 7-9: Actor Critic Methods Week 10-12: DPG Methods Week 12-14: PPO Week 14-16: SAC Week 17-18: AlphaZero Week 19-20: MuZero Week 21-22: Curiosity Driven Methods Week 23-N: Time Buffer (Clean Up, Refactoring, Running experiments) Curriculum","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta property="og:image" content="http://localhost:4000/assets/img/pexels/forrest_bg_blur.jpg " />
+</head>
+
+  <body>
+    <header class="site-header">
+
+    <!-- Logo and title -->
+	<div class="branding">
+        
+		<a href="/">
+			<img alt="logo img" class="avatar" src="/assets/img/pexels/db_icon.png" />
+		</a>
+        
+
+		<h1 class="site-title">
+			<a aria-label="Donal Byrne" href="/">
+        Donal Byrne
+      </a>
+		</h1>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a aria-label="pull" id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul class="hide">
+        
+
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="About" title="About" href="/about/">
+                     About 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Gallery" title="Gallery" href="/gallery/">
+                     Gallery 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Portfolio" title="Portfolio" href="/portfolio/">
+                     Portfolio 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Search" title="Search" href="/search/">
+                     <i class="fa fa-search" aria-hidden="true"></i>
+                    
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Tags" title="Tags" href="/tags/">
+                     <i class="fa fa-tags" aria-hidden="true"></i>
+                    
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header id="main" style="">
+    
+    <h1 id="The+Road+To+RL+Journeyman" class="title">The Road To RL Journeyman</h1>
+    
+
+
+<div class="post-info">
+    <p class="meta">
+      June 22, 2020
+    </p></div>
+
+    
+  </header>
+
+  <section class="post-content">
+  
+      <p>Since leaving college 2 years ago I have been working as an ML engineer in high performing environment with people
+much smarter and more capable than myself. Due to this I have had to put in a lot of time ramping up my own core ML and 
+software engineering skills in order to keep up. This hasn’t left a lot of room for my real passion, Reinforcement Learning. 
+Although I still have a lot to learn, even in some of the foundational topics, I want to prioritize some time to focus 
+on the area im passionate. RL is what got me into ML in the first place and looking back over the last two years, I 
+haven’t made as much progress in this area as I would like, even if I have progressed a lot in other areas.</p>
+
+<p>This leads me to the point of this article. I am setting myself a goal moving from an RL novice, to an Expert!</p>
+
+<h2 id="the-goal">The Goal</h2>
+
+<p>Alright, expert may be a bit of a stretch, but its nice to have goals. My goal, is to spend the rest of the 2020 focusing
+on studying RL and achieving journeyman status.</p>
+
+<blockquote>
+  <p>Journeyman: A journeyman is a worker, skilled in a given trade or craft, who has successfully completed an official apprenticeship.</p>
+</blockquote>
+
+<p>Currently there are 194 days left in 2020, which is roughly 27 weeks. My goal is to speen at least 1 hour a day Mon-Fri
+and 6 hours over Sat-Sun studying. This will give me ~11 hours per work to focus on studying, which is ~297 hours in total
+before 2021. Now this may sound like a lot of time, but really its not when you consider that it takes around 10,000 hours 
+to master a skill. This is merely setting the foundation for my journey in RL. Also, I actually started a lot of this
+work a little under a month ago even before I set myself this challenge when I started working on my current RL repo, 
+so that adds another 44 hours to my total timeline.</p>
+
+<p>The repo will all the algorithms I have learned and implemented can be found here https://github.com/djbyrne/core_rl</p>
+
+<p><img src="/assets/img/pexels/novice_to_master.jpg" alt="Apprentice To Master: http://jasonzavoda-hallofthemountainking.blogspot.com/2018/03/npc-master-journeyman-apprentice.html" /></p>
+
+<h2 id="the-plan">The Plan</h2>
+
+<p>Although I have done several RL side projects and covered a lot of the major algorithms at work or at home, I always focused
+on implimenting algorithms quickly and put less focus into fully understanding the core principles. To ensure that there 
+are no gaps in my knowledge, I plan to start from the beginning with simple tabluar tabular methods and work my way up.</p>
+
+<p>Buts not all. Not only do I want to increase my knowledge of RL, I want to gain practical experience of building RL 
+that not high performing and high quality. This means that every RL technique I study I want to also implement and
+try and reproduce the results shown in the accompanying paper. In order to ensure a strong understanding of my subject
+I have created the following guide for studying the various algorithms and techniques of reinforcement learning. I have 
+dubbed this guide, the “Learning Protocol”.</p>
+
+<h3 id="learning-protocol">Learning Protocol</h3>
+
+<p>The learning protocol is a set of rules and steps that I have set out to ensure the understanding and profficiency of a 
+topic. I can only consider a topic “complete” once I have gone through each of these steps.</p>
+
+<ul>
+  <li><strong>High Level Understanding:</strong> blog posts, articles, videos, talks, presentations</li>
+  <li><strong>Low Level Understanding:</strong> Papers, Algorithms</li>
+  <li><strong>Code Review:</strong> GitHub Repos, Tutorials</li>
+  <li><strong>Reimplementation:</strong> Recreate model and results</li>
+  <li><strong>Algorithm Explanation:</strong> ReadMe, blog post, presentation/talk</li>
+</ul>
+
+<p>The idea behind these steps is that it goes from a high level base understanding, all the way down to a full low level 
+understanding of the full algorithm. In order to fully understand something I believe you need to be able to implement 
+it and also be able to explain it simply.</p>
+
+<p>Similarly to the general learning guide, I have a set of steps/requirements for my implementations.</p>
+
+<h3 id="implementation-protocol">Implementation Protocol</h3>
+
+<p>All model implementations must complete the following requirements before they are considered complete</p>
+
+<ul>
+  <li><strong>Modular Design:</strong> code is broken up until logical units. Generally no longer than 20 lines</li>
+  <li><strong>Fully Tested:</strong> All core elements must be tested. Core elements are anything that is critical to the models learning
+or is planned to be re-used in further work. i.e pretty much all of it. Ideally, all models will be built with TDD 
+principles</li>
+  <li><strong>Documented:</strong> I doubt that I will take the time to generate full documentation, but all models will have relevant 
+docstrings, type annotations and most importantly, a ReadMe explaining the key points of the model</li>
+  <li><strong>Results &amp; Metrics:</strong> All models will be run with a series of KPI metrics for both model quality and performance. 
+The will then be compared to a baseline when applicable.</li>
+  <li><strong>Implemented in Lightning:</strong> Pytorch Lightning is a fantastic library that helps to enforce standards,
+reproducability and simplicity when build models.</li>
+</ul>
+
+<h3 id="learning-plan">Learning Plan</h3>
+<p>I have previously fallen into the common trap of jumping from one topic to another while studying ML and not really 
+finishing a topic or project to completion. To start to research a topic, find some good resources and get to work, but
+a few days later I find a “better” resource or I find a “better” topic. To avoid this I have set up a curriculum for
+myself that I am going to follow until completion. As well as this I have set out a loose study plan. I say loose 
+because the standards I have set are high and I dont really have a huge amount of time, so anything schedules or 
+timelines I set here are just best guesses and could quickly change.</p>
+
+<h4 id="schedule">Schedule</h4>
+
+<ul>
+  <li><strong>Week 1:</strong> Tabular Methods</li>
+  <li><strong>Week 2-3:</strong> DQN Methods</li>
+  <li><strong>Week 4:</strong> Policy Gradients</li>
+  <li><strong>Week 5-6:</strong> Performance Improvements</li>
+  <li><strong>Week 7-9:</strong> Actor Critic Methods</li>
+  <li><strong>Week 10-12:</strong> DPG Methods</li>
+  <li><strong>Week 12-14:</strong> PPO</li>
+  <li><strong>Week 14-16:</strong> SAC</li>
+  <li><strong>Week 17-18:</strong> AlphaZero</li>
+  <li><strong>Week 19-20:</strong> MuZero</li>
+  <li><strong>Week 21-22:</strong> Curiosity Driven Methods</li>
+  <li><strong>Week 23-N:</strong> Time Buffer (Clean Up, Refactoring, Running experiments)</li>
+</ul>
+
+<h4 id="curriculum">Curriculum</h4>
+<!--more-->
+<p><strong>Reinforcement Learning: An Introduction (Second Edition)</strong></p>
+
+<p><a href="https://www.amazon.com/Reinforcement-Learning-Introduction-Adaptive-Computation/dp/0262039249/ref=dp_ob_title_bk">Amazon</a> |
+<a href="http://incompleteideas.net/book/the-book-2nd.html">Free</a></p>
+
+<p>Authours: Richard Sutton and Andrew Barto</p>
+
+<p><strong>Deep Reinforcement Learning Hands-On (Second Edition)</strong></p>
+
+<p><a href="https://www.amazon.com/Deep-Reinforcement-Learning-Hands-optimization/dp/1838826998/ref=pd_sbs_14_1/132-1078346-6339908?_encoding=UTF8&amp;pd_rd_i=1838826998&amp;pd_rd_r=91d3597d-a650-45f2-b165-5af50e7da3c8&amp;pd_rd_w=gkTl9&amp;pd_rd_wg=XQfeK&amp;pf_rd_p=d28ef93e-22cf-4527-b60a-90c984b5663d&amp;pf_rd_r=JRBTA1QQ2FHXKTVFWZP5&amp;psc=1&amp;refRID=JRBTA1QQ2FHXKTVFWZP5">Amazon</a></p>
+
+<p>Author: Maxim Lapan</p>
+
+<p><strong>Clean Code</strong></p>
+
+<p><a href="https://www.amazon.co.uk/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=asc_df_0132350882/?tag=googshopuk-21&amp;linkCode=df0&amp;hvadid=310913487979&amp;hvpos=&amp;hvnetw=g&amp;hvrand=6297754362327610356&amp;hvpone=&amp;hvptwo=&amp;hvqmt=&amp;hvdev=c&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=1007880&amp;hvtargid=pla-435472505264&amp;psc=1&amp;th=1&amp;psc=1">Amazon</a></p>
+
+<p>Author: Robert C. Martin</p>
+
+<p><strong>Berkley Deep RL Bootcamp 2017</strong></p>
+
+<p><a href="https://sites.google.com/view/deep-rl-bootcamp/lectures">Link</a></p>
+
+<p>Speakers: P. Abieel, Y. Duan, V. Mnih, A. Karpathy, J. Schulman, X. Chen, C. Finn, S. Levine</p>
+
+    
+  </section>
+
+  <!-- Social media shares -->
+  
+
+<div class="share-buttons">
+    <ul class="share-buttons">
+        <div class="meta">Share</div>
+        
+        <li>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2020%2F06%2F22%2Froad-to-rl-journeyman.html" target="_blank" title=" Facebook">
+			<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Share on Facebook</span>
+		</a>
+        </li>
+         
+        <li>
+            <a href="https://twitter.com/intent/tweet?text=The+Road+To+RL+Journeyman%20http%3A%2F%2Flocalhost%3A4000%2F2020%2F06%2F22%2Froad-to-rl-journeyman.html" target="_blank" title="">
+			<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Tweet</span>
+		</a>
+        </li>
+            
+        <li>
+            <a href="http://www.reddit.com/submit?url=http://localhost:4000/2020/06/22/road-to-rl-journeyman.html&title=The+Road+To+RL+Journeyman%20%7C%20Donal+Byrne" target="_blank" title=" Reddit">
+			<i class="fa fa-reddit-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Share on Reddit</span>
+		</a>
+        </li>
+           
+        <li>
+            <a href="mailto:?subject=The+Road+To+RL+Journeyman%20%7C%20Donal+Byrne&body=:%20http://localhost:4000/2020/06/22/road-to-rl-journeyman.html" target="_blank" title="">
+			<i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Email</span>
+		</a>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+
+   <!-- Tag list -->
+  
+  
+
+
+<footer>
+  <div class="tag-list">
+    
+      <div class="meta">Tags</div>
+    
+
+    
+    <a class="button" href="/tags#learning">
+      <p><i class="fa fa-tag fa-fw"></i> learning</p>
+    </a>
+    
+    <a class="button" href="/tags#machine-learning">
+      <p><i class="fa fa-tag fa-fw"></i> machine-learning</p>
+    </a>
+    
+    <a class="button" href="/tags#reinforcment-learning">
+      <p><i class="fa fa-tag fa-fw"></i> reinforcment-learning</p>
+    </a>
+    
+  </div>
+</footer>
+
+
+</article>
+
+<!-- Disqus -->
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+    
+
+    
+</div>
+
+
+
+<!-- To change color of links in the page -->
+<style>
+  
+
+  header#main {
+    background-repeat:no-repeat;
+  
+  }
+</style>
+
+    </div>
+    <footer class="site-footer">
+    <p class="text">
+        Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+</p>
+            <div class="footer-icons">
+                <ul>
+                <!-- Social icons from Font Awesome, if enabled -->
+                
+<li>
+    <a feed.xml href="feed.xml"
+       title="Follow RSS feed">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+    <a href="https://github.com/sylhare" title="Follow on GitHub">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </ul>
+            </div>
+</footer>
+
+
+
+  </body>
+</html>

@@ -1,123 +1,15 @@
 [
   
   {
-    "title"    : "Sample post",
+    "title"    : "The Road To RL Journeyman",
     "category" : "",
-    "tags"     : " A Tag, Test, Lorem, Ipsum",
-    "url"      : "/2019/06/30/sample-post.html",
-    "date"     : "June 30, 2019",
-    "excerpt"  : "Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. \nPraesent et diam eget libero egestas mattis sit amet vitae augue. Nam tinci...",
-  "content"  : "Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. \nPraesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. \n\nDonec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.\n\n\n  Consectetur adipiscing elit\n  Donec a diam lectus\n  Sed sit amet ipsum mauris\n\n\nUt turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.\n\nNunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum.\n\n\n\nUt dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.\n\n\n  Suspendisse lectus leo, consectetur in tempor sit amet, placerat quis neque\n\n\nEtiam luctus porttitor lorem, sed suscipit est rutrum non. Curabitur lobortis nisl a enim congue semper. Aenean commodo ultrices imperdiet. Vestibulum ut justo vel sapien venenatis tincidunt.\n\nPhasellus eget dolor sit amet ipsum dapibus condimentum vitae quis lectus. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Ut augue nunc, sodales ut euismod non, adipiscing vitae orci1. Mauris ut placerat justo. Mauris in ultricies enim. Quisque nec est eleifend nulla ultrices egestas quis ut quam. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna.\n\n\n  \n    \n\n      John Smith, A Title About Citations &amp;#8617;\n    \n  \n\n"
+    "tags"     : " reinforcment-learning, learning, machine-learning",
+    "url"      : "/2020/06/22/road-to-rl-journeyman.html",
+    "date"     : "June 22, 2020",
+    "excerpt"  : "Since leaving college 2 years ago I have been working as an ML engineer in high performing environment with people\nmuch smarter and more capable than myself. Due to this I have had to put in a lot of time ramping up my own core ML and \nsoftware en...",
+  "content"  : "Since leaving college 2 years ago I have been working as an ML engineer in high performing environment with people\nmuch smarter and more capable than myself. Due to this I have had to put in a lot of time ramping up my own core ML and \nsoftware engineering skills in order to keep up. This hasn’t left a lot of room for my real passion, Reinforcement Learning. \nAlthough I still have a lot to learn, even in some of the foundational topics, I want to prioritize some time to focus \non the area im passionate. RL is what got me into ML in the first place and looking back over the last two years, I \nhaven’t made as much progress in this area as I would like, even if I have progressed a lot in other areas.\n\nThis leads me to the point of this article. I am setting myself a goal moving from an RL novice, to an Expert!\n\nThe Goal\n\nAlright, expert may be a bit of a stretch, but its nice to have goals. My goal, is to spend the rest of the 2020 focusing\non studying RL and achieving journeyman status.\n\n\n  Journeyman: A journeyman is a worker, skilled in a given trade or craft, who has successfully completed an official apprenticeship.\n\n\nCurrently there are 194 days left in 2020, which is roughly 27 weeks. My goal is to speen at least 1 hour a day Mon-Fri\nand 6 hours over Sat-Sun studying. This will give me ~11 hours per work to focus on studying, which is ~297 hours in total\nbefore 2021. Now this may sound like a lot of time, but really its not when you consider that it takes around 10,000 hours \nto master a skill. This is merely setting the foundation for my journey in RL. Also, I actually started a lot of this\nwork a little under a month ago even before I set myself this challenge when I started working on my current RL repo, \nso that adds another 44 hours to my total timeline.\n\nThe repo will all the algorithms I have learned and implemented can be found here https://github.com/djbyrne/core_rl\n\n\n\nThe Plan\n\nAlthough I have done several RL side projects and covered a lot of the major algorithms at work or at home, I always focused\non implimenting algorithms quickly and put less focus into fully understanding the core principles. To ensure that there \nare no gaps in my knowledge, I plan to start from the beginning with simple tabluar tabular methods and work my way up.\n\nButs not all. Not only do I want to increase my knowledge of RL, I want to gain practical experience of building RL \nthat not high performing and high quality. This means that every RL technique I study I want to also implement and\ntry and reproduce the results shown in the accompanying paper. In order to ensure a strong understanding of my subject\nI have created the following guide for studying the various algorithms and techniques of reinforcement learning. I have \ndubbed this guide, the “Learning Protocol”.\n\nLearning Protocol\n\nThe learning protocol is a set of rules and steps that I have set out to ensure the understanding and profficiency of a \ntopic. I can only consider a topic “complete” once I have gone through each of these steps.\n\n\n  High Level Understanding: blog posts, articles, videos, talks, presentations\n  Low Level Understanding: Papers, Algorithms\n  Code Review: GitHub Repos, Tutorials\n  Reimplementation: Recreate model and results\n  Algorithm Explanation: ReadMe, blog post, presentation/talk\n\n\nThe idea behind these steps is that it goes from a high level base understanding, all the way down to a full low level \nunderstanding of the full algorithm. In order to fully understand something I believe you need to be able to implement \nit and also be able to explain it simply.\n\nSimilarly to the general learning guide, I have a set of steps/requirements for my implementations.\n\nImplementation Protocol\n\nAll model implementations must complete the following requirements before they are considered complete\n\n\n  Modular Design: code is broken up until logical units. Generally no longer than 20 lines\n  Fully Tested: All core elements must be tested. Core elements are anything that is critical to the models learning\nor is planned to be re-used in further work. i.e pretty much all of it. Ideally, all models will be built with TDD \nprinciples\n  Documented: I doubt that I will take the time to generate full documentation, but all models will have relevant \ndocstrings, type annotations and most importantly, a ReadMe explaining the key points of the model\n  Results &amp;amp; Metrics: All models will be run with a series of KPI metrics for both model quality and performance. \nThe will then be compared to a baseline when applicable.\n  Implemented in Lightning: Pytorch Lightning is a fantastic library that helps to enforce standards,\nreproducability and simplicity when build models.\n\n\nLearning Plan\nI have previously fallen into the common trap of jumping from one topic to another while studying ML and not really \nfinishing a topic or project to completion. To start to research a topic, find some good resources and get to work, but\na few days later I find a “better” resource or I find a “better” topic. To avoid this I have set up a curriculum for\nmyself that I am going to follow until completion. As well as this I have set out a loose study plan. I say loose \nbecause the standards I have set are high and I dont really have a huge amount of time, so anything schedules or \ntimelines I set here are just best guesses and could quickly change.\n\nSchedule\n\n\n  Week 1: Tabular Methods\n  Week 2-3: DQN Methods\n  Week 4: Policy Gradients\n  Week 5-6: Performance Improvements\n  Week 7-9: Actor Critic Methods\n  Week 10-12: DPG Methods\n  Week 12-14: PPO\n  Week 14-16: SAC\n  Week 17-18: AlphaZero\n  Week 19-20: MuZero\n  Week 21-22: Curiosity Driven Methods\n  Week 23-N: Time Buffer (Clean Up, Refactoring, Running experiments)\n\n\nCurriculum\n\nReinforcement Learning: An Introduction (Second Edition)\n\nAmazon |\nFree\n\nAuthours: Richard Sutton and Andrew Barto\n\nDeep Reinforcement Learning Hands-On (Second Edition)\n\nAmazon\n\nAuthor: Maxim Lapan\n\nClean Code\n\nAmazon\n\nAuthor: Robert C. Martin\n\nBerkley Deep RL Bootcamp 2017\n\nLink\n\nSpeakers: P. Abieel, Y. Duan, V. Mnih, A. Karpathy, J. Schulman, X. Chen, C. Finn, S. Levine\n"
 } 
   
-  ,
   
-  {
-  
-  "title"    : "Ninja",
-  "category" : "",
-  "tags"     : " Lorem",
-  "url"      : "/portfolio/ninja",
-  "date"     : "April 8, 2014",
-  "excerpt"  : "\n\nSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem qu...",
-  "content"  : "\n\nSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\n\n"
-  
-} ,
-  
-  {
-  
-  "title"    : "Creative",
-  "category" : "",
-  "tags"     : " Ipsum",
-  "url"      : "/portfolio/safe",
-  "date"     : "August 16, 2014",
-  "excerpt"  : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia...",
-  "content"  : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\nUse this area of the page to describe your project. The icon above is part of a free icon set by Flat Icons. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!\n"
-  
-} ,
-  
-  {
-  
-  "title"    : "Circus",
-  "category" : "",
-  "tags"     : " Ipsum",
-  "url"      : "/portfolio/circus",
-  "date"     : "September 1, 2014",
-  "excerpt"  : "\n\nSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem qu...",
-  "content"  : "\n\nSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\n\n"
-  
-} ,
-  
-  {
-  
-  "title"    : "Tower of Hanoi",
-  "category" : "",
-  "tags"     : " ",
-  "url"      : "/portfolio/hanoi",
-  "date"     : "September 1, 2014",
-  "excerpt"  : "\n\nSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem qu...",
-  "content"  : "\n\nSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\n\n"
-  
-} ,
-  
-  {
-  
-  "title"    : "Tic tac toe",
-  "category" : "",
-  "tags"     : " ",
-  "url"      : "/portfolio/tictactoe",
-  "date"     : "September 1, 2014",
-  "excerpt"  : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia...",
-  "content"  : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\n\n"
-  
-} ,
-  
-  {
-  
-  "title"    : "Cake",
-  "category" : "",
-  "tags"     : " Lorem, Ipsum, Portfolio",
-  "url"      : "/portfolio/cake",
-  "date"     : "September 27, 2015",
-  "excerpt"  : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia...",
-  "content"  : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\nUse this area of the page to describe your project. The icon above is part of a free icon set by Flat Icons. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!\n"
-  
-} ,
-  
-  {
-  
-  "title"    : "Jekyll",
-  "category" : "",
-  "tags"     : " ",
-  "url"      : "/portfolio/jekyllblog",
-  "date"     : "May 26, 2017",
-  "excerpt"  : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia...",
-  "content"  : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\n\n"
-  
-} ,
-  
-  {
-  
-  "title"    : "Lorem Ipsum",
-  "category" : "",
-  "tags"     : " ",
-  "url"      : "/portfolio/submarine",
-  "date"     : "September 3, 2017",
-  "excerpt"  : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia...",
-  "content"  : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\nUse this area of the page to describe your project. The icon above is part of a free icon set by Flat Icons. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!\n\n"
-  
-} ,
-  
-  {
-  
-  "title"    : "Github",
-  "category" : "",
-  "tags"     : " Lorem, Portfolio",
-  "url"      : "/portfolio/gitlecture",
-  "date"     : "October 20, 2017",
-  "excerpt"  : "\n\nSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem qu...",
-  "content"  : "\n\nSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\n\n"
-  
-} 
   
 ]
