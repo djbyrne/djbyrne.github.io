@@ -1,16 +1,16 @@
 # Icons on the footer
 rss: true
-email_address:    # Full email address, e.g. "sam@example.com"
+email_address: donaljbyrne@me.com    # Full email address, e.g. "sam@example.com"
 behance:
 bitbucket:
 dribbble:
 facebook:
 flickr:
 gitlab:
-github: "sylhare"
+github: djbyrne
 instagram:
 keybase:
-linkedin:         # Full URL
+linkedin: https://www.linkedin.com/in/donal-byrne-ai
 pinterest:
 reddit:
 soundcloud:
@@ -35,6 +35,6 @@ share:
   pinterest:
   pocket:
   reddit: true
-  linkedin:
+  linkedin: true
   wordpress:
   email: true
