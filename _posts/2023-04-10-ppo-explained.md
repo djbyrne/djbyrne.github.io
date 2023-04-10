@@ -107,9 +107,9 @@ PPO's effectiveness in a wide range of applications showcases its versatility an
 
 Here are some more resources to help you learn more about PPO. 
 
-****Proximal Policy Optimization Algorithms****: [https://arxiv.org/abs/1707.06347](https://arxiv.org/abs/1707.06347)
+**Proximal Policy Optimization Algorithms**: [https://arxiv.org/abs/1707.06347](https://arxiv.org/abs/1707.06347)
 
-****High-Dimensional Continuous Control Using Generalized Advantage Estimation:**** [https://arxiv.org/abs/1506.02438.pdf](https://arxiv.org/abs/1506.02438)
+**High-Dimensional Continuous Control Using Generalized Advantage Estimation:** [https://arxiv.org/abs/1506.02438.pdf](https://arxiv.org/abs/1506.02438)
 
 **Hugging Face RL Course: Unit 8 Clipped Surrogate Objective:** [https://huggingface.co/deep-rl-course/unit8/clipped-surrogate-objective?fw=pt](https://huggingface.co/deep-rl-course/unit8/clipped-surrogate-objective?fw=pt)
 
