@@ -27,9 +27,11 @@ PPO achieves this by measuring how much the agent's policy has changed compared 
 
 PPO commonly utilises the Actor-Critic architecture, which consists of two neural networks: the Actor network and the Critic network.
 
-**Actor $$\pi(a|s)$$:**  network responsible for learning the policy (i.e., deciding which actions to take). This outputs a probability distribution over possible actions. The Actor's parameters are adjusted using gradient descent based on the feedback provided by the Critic.
+**Actor $$\pi(a|s)$$:** 
+network responsible for learning the policy (i.e., deciding which actions to take). This outputs a probability distribution over possible actions. The Actor's parameters are adjusted using gradient descent based on the feedback provided by the Critic.
 
-**Critic $$\hat{v}(s)$$:** network estimates the value function (i.e., evaluating how good it is to be in a given state). The value function represents the expected cumulative rewards from a given state, following the current policy. The Critic is usually another neural network that takes the state as input and predicts the state's value.
+**Critic $$\hat{v}(s)$$:** 
+network estimates the value function (i.e., evaluating how good it is to be in a given state). The value function represents the expected cumulative rewards from a given state, following the current policy. The Critic is usually another neural network that takes the state as input and predicts the state's value.
 
 The Actor-Critic method helps reduce the variance in gradient estimation, a common issue in Policy Gradient methods. It does so by utilising the Critic's value estimates to compute the "advantage" for each action taken, which represents how much better an action is compared to the average action in a given state, according to the Critic's estimation.
 
@@ -57,20 +59,15 @@ $$
 
 The equation above represents the clipped surrogate loss function, $$L^{CLIP}(\theta)$$, used in PPO. Let's break down the expression:
 
-1. $$L^{CLIP}(\theta)$$ denotes the clipped surrogate loss function that depends on the policy parameters, $$\theta$$. We use this function to update our PPO policy in the right direction. 
-    
+1. $$L^{CLIP}(\theta)$$ denotes the clipped surrogate loss function that depends on the policy parameters, $$\theta$$. We use this function to update our PPO policy in the right direction.
     
 2. The symbol $$\hat{E}_t$$ means we're taking an average over time, considering different moments when the agent makes decisions. This is refereed to as taking the expectation over time steps t.
+
+3. $$r_t(θ)$$ represents how different the new policy is compared to the old one. It's a ratio that tells us how likely the agent is to take a certain action under the new policy compared to the old policy. This ratio is defined as $$\pi_{\theta}(a_t|s_t) / \pi_{\theta_{old}}(a_t|s_t)$$, where $$\pi_{\theta}(a_t|s_t)$$ denotes the probability of taking action $$a_t$$ given state $$s_t$$ under the policy with parameters $$\theta$$ at the time step $$t$$. Notice that this ratio replaces the log probability in the original Policy Gradient Objective.
     
-    
-3. $$r_t(θ)$$ represents how different the new policy is compared to the old one. It's a ratio that tells us how likely the agent is to take a certain action under the new policy compared to the old policy. This ratio is defined as $$\pi_{\theta}(a_t|s_t) / \pi_{\theta_{old}}(a_t|s_t)$$, where $$\pi_{\theta}(a_t|s_t)$$ denotes the probability of taking action $$a_t$$ given state $$s_t$$ under the policy with parameters $$\theta$$ at the time step $$t$$. Notice that this ratio replaces the log probability in the original Policy Gradient Objective
-    
-4. $$\hat{A}_t$$ measures how good an action is compared to the average action at a specific situation (state). A higher value means the action is expected to yield a better outcome. 
-    
-    This estimation is known as the “advantage”.
+4. $$\hat{A}_t$$ measures how good an action is compared to the average action at a specific situation (state). A higher value means the action is expected to yield a better outcome. This estimation is known as the “advantage”.
     
 5. $$clip(r_t(\theta), 1-\varepsilon, 1 + \varepsilon)$$ is a clipping function that limits the value of $$r_t(θ)$$ to the range $$[1 - ε, 1 + ε]$$, where $$ε$$ is a small positive constant. This way, the loss function balances between improving the policy and keeping it stable.
-    
     
 6. $$min(...)$$takes the smallest value between two expressions: one without the clipping function and one with it. This way, the loss function balances between improving the policy and keeping it stable.
 
