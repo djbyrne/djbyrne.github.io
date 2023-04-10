@@ -13,7 +13,7 @@ By the end, you'll have a solid understanding of the principles behind PPO, enab
 
 Imagine you’re learning to drive a car. You’re super excited to get out onto the road, but cars can be dangerous and you are more than a little nervous of damaging the car or even hurting someone. If you accelerate or turn too quickly you could easily lose control of the car. On the other hand, if you slowly increase how fast you are driving you will consistently build up the skills and confidence to handle more challenging situations allowing you to quickly go from the car park to the motorways!
 
-![Driving Lessons](https://github.com/djbyrne/djbyrne.github.io/blob/master/assets/img/posts/ppo-explained/driving_lessons.jpg)
+![Driving Lessons: https://github.com/djbyrne/djbyrne.github.io/blob/master/assets/img/posts/ppo-explained/driving_lessons.jpg]({{ "/assets/img/posts/ppo-explained/driving_lessons.jpg" | relative_url}})
 
 The Proximal Policy Optimization (PPO) algorithm works in a similar way. It helps a machine learning agent learn how to make the right decisions by taking small steps towards better actions, rather than making large, unpredictable jumps. This helps to ensure that the agent doesn't "lose control of the car" and end up making bad decisions that are difficult to recover from.
 
@@ -23,7 +23,7 @@ PPO achieves this by measuring how much the agent's policy has changed compared 
 
 ## Actor Critic Architecture
 
-![Actor Critic Architecture](https://github.com/djbyrne/djbyrne.github.io/blob/master/assets/img/posts/ppo-explained/actor_critic_arch.png)
+![Actor Critic Architecture: https://i0.wp.com/www.datahubbs.com/wp-content/uploads/2018/08/two_headed_network.png?w=790&ssl=1]({{ "/assets/img/posts/ppo-explained/actor_critic_arch.png" | relative_url}})
 
 PPO commonly utilises the Actor-Critic architecture, which consists of two neural networks: the Actor network and the Critic network. 
 
