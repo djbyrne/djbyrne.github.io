@@ -68,7 +68,7 @@ The equation above represents the clipped surrogate loss function, $$L^{CLIP}(\t
 3. $$r_t(θ)$$ represents how different the new policy is compared to the old one. It's a ratio that tells us how likely the agent is to take a certain action under the new policy compared to the old policy. This ratio is defined as $$\frac{\pi_{\theta}(a_t|s_t)}{\pi_{\theta_{old}}(a_t|s_t)}$$ , where $$\pi_{\theta}(a_t|s_t)$$ denotes the probability of taking action $$a_t$$ given state $$s_t$$ under the policy with parameters $$\theta$$ at the time step $$t$$. Notice that this ratio replaces the log probability in the original Policy Gradient Objective.
     
 
-4. $$\hat{A}_t$$ measures how good an action is compared to the average action at a specific situation (state). A higher value means the action is expected to yield a better outcome. This estimation is known as the “advantage”.
+4. $$\hat{A}_t$$ measures how good an action is compared to the average action at a specific situation (state). A higher value means the action is expected to yield a better outcome. This estimation is known as the 'advantage'.
     
 
 5. $$clip(r_t(\theta), 1-\varepsilon, 1 + \varepsilon)$$ is a clipping function that limits the value of $$r_t(θ)$$ to the range $$[1 - ε, 1 + ε]$$, where $$ε$$ is a small positive constant. This way, the loss function balances between improving the policy and keeping it stable.
