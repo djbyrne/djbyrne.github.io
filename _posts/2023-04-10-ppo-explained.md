@@ -23,7 +23,7 @@ PPO achieves this by measuring how much the agent's policy has changed compared 
 
 ## Actor Critic Architecture
 
-![Actor Critic Architecture](https://github.com/djbyrne/djbyrne.github.io/blob/master/assets/img/posts/ppo-explained/actor_critic_arch.jpg)
+![Actor Critic Architecture](https://github.com/djbyrne/djbyrne.github.io/blob/master/assets/img/posts/ppo-explained/actor_critic_arch.png)
 
 PPO commonly utilises the Actor-Critic architecture, which consists of two neural networks: the Actor network and the Critic network. 
 
