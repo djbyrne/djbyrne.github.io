@@ -27,6 +27,7 @@ PPO achieves this by measuring how much the agent's policy has changed compared 
 
 PPO commonly utilises the Actor-Critic architecture, which consists of two neural networks: the Actor network and the Critic network. 
 
+
 **Actor $\pi(a|s)$:**  network responsible for learning the policy (i.e., deciding which actions to take). This outputs a probability distribution over possible actions. The Actor's parameters are adjusted using gradient descent based on the feedback provided by the Critic.
 
 
@@ -56,12 +57,12 @@ $$
 L^{CLIP}(\theta) =  \hat{E}_t[ min(r_t(\theta)\hat{A}_t, clip(r_t(\theta), 1-\varepsilon, 1 + \varepsilon) * \hat{A}_t)]
 $$
 
-The equation above represents the clipped surrogate loss function, $L^{CLIP}(\theta)$, used in PPO. Let's break down the expression:
+The equation above represents the clipped surrogate loss function, $$L^{CLIP}(\theta)$$, used in PPO. Let's break down the expression:
 
-1. $L^{CLIP}(\theta)$ denotes the clipped surrogate loss function that depends on the policy parameters, $\theta$. We use this function to update our PPO policy in the right direction. 
+1. $$L^{CLIP}(\theta)$$ denotes the clipped surrogate loss function that depends on the policy parameters, $$\theta$$. We use this function to update our PPO policy in the right direction. 
     
     
-2. The symbol $\hat{E}_t$ means we're taking an average over time, considering different moments when the agent makes decisions. This is refereed to as taking the expectation over time steps t.
+2. The symbol $$\hat{E}_t$$ means we're taking an average over time, considering different moments when the agent makes decisions. This is refereed to as taking the expectation over time steps t.
     
     
 3. $r_t(θ)$ represents how different the new policy is compared to the old one. It's a ratio that tells us how likely the agent is to take a certain action under the new policy compared to the old policy. 
