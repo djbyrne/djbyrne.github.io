@@ -65,7 +65,7 @@ The equation above represents the clipped surrogate loss function, $$L^{CLIP}(\t
 2. The symbol $$\hat{E}_t$$ means we're taking an average over time, considering different moments when the agent makes decisions. This is refereed to as taking the expectation over time steps t.
 
 
-3. $$r_t(θ)$$ represents how different the new policy is compared to the old one. It's a ratio that tells us how likely the agent is to take a certain action under the new policy compared to the old policy. This ratio is defined as $$\frac{\pi_{\theta}(a_t|s_t)}{\pi_{\theta_{old}}(a_t|s_t)}$$ , where $$\pi_{\theta}(a_t|s_t)$$ denotes the probability of taking action $$a_t$$ given state $$s_t$$ under the policy with parameters $$\theta$$ at the time step $$t$$. Notice that this ratio replaces the log probability in the original Policy Gradient Objective.
+3. $$r_t(θ)$$ represents how different the new policy is compared to the old one. It's a ratio that tells us how likely the agent is to take a certain action under the new policy compared to the old policy. This ratio is defined as `$$\frac{\pi_{\theta}(a_t|s_t)}{\pi_{\theta_{old}}(a_t|s_t)}$$` , where `$$\pi_{\theta}(a_t|s_t)$$` denotes the probability of taking action $$a_t$$ given state $$s_t$$ under the policy with parameters $$\theta$$ at the time step $$t$$. Notice that this ratio replaces the log probability in the original Policy Gradient Objective.
     
 
 4. $$\hat{A}_t$$ measures how good an action is compared to the average action at a specific situation (state). A higher value means the action is expected to yield a better outcome. This estimation is known as the 'advantage'.
