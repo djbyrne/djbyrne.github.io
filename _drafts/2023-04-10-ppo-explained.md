@@ -97,3 +97,20 @@ To ensure that the agent's policy updates are conservative, PPO performs multipl
 1. **Improved Stability:** Using mini-batches is a form of stochastic gradient descent, which has been shown to have better convergence properties compared to batch gradient descent. It helps escape local minima and find better solutions in the optimisation landscape.
 2. **Improved Convergence:** Running multiple optimisation epochs with mini-batches tends to result in better convergence and stability of the learning process. 
 3. **Improved Efficiency:** allows the model to learn more effectively by updating its parameters multiple times based on different subsets of the same data.
+
+# Conclusion
+Throughout this blog post, we delved into the inner workings of the Proximal Policy Optimisation (PPO) algorithm and its various components, such as the Actor-Critic architecture, the clipped objective function, Generalised Advantage Estimation, and the use of mini-batches and update epochs. These elements come together to create a powerful reinforcement learning algorithm that provides controlled policy updates and stable learning.
+
+PPO's effectiveness in a wide range of applications showcases its versatility and robustness, making it a valuable tool for reinforcement learning enthusiasts and practitioners. As you embark on your journey in reinforcement learning, consider incorporating PPO into your toolkit to tackle complex problems and drive innovation in AI. The knowledge you've gained here will serve as a strong foundation for your future projects and help you unlock the full potential of reinforcement learning. Keep learning and experimenting! 
+
+# Resources
+
+Here are some more resources to help you learn more about PPO. 
+
+****Proximal Policy Optimization Algorithms****: [https://arxiv.org/abs/1707.06347](https://arxiv.org/abs/1707.06347)
+
+****High-Dimensional Continuous Control Using Generalized Advantage Estimation:**** [https://arxiv.org/abs/1506.02438.pdf](https://arxiv.org/abs/1506.02438)
+
+**Hugging Face RL Course: Unit 8 Clipped Surrogate Objective:** [https://huggingface.co/deep-rl-course/unit8/clipped-surrogate-objective?fw=pt](https://huggingface.co/deep-rl-course/unit8/clipped-surrogate-objective?fw=pt)
+
+**CleanRL:** https://github.com/vwxyzjn/cleanrl
