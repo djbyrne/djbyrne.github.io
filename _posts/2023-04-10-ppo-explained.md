@@ -59,6 +59,7 @@ $$
 
 The equation above represents the clipped surrogate loss function, $$L^{CLIP}(\theta)$$, used in PPO. Let's break down the expression:
 
+
 1. $$L^{CLIP}(\theta)$$ denotes the clipped surrogate loss function that depends on the policy parameters, $$\theta$$. We use this function to update our PPO policy in the right direction.
     
 
