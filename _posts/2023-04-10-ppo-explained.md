@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Proximal Policy Optimisation Explained
-tags: [reinforcment-learning, machine-learning, ppo, rl, pytorch]
+tags: [reinforcment-learning, machine-learning, ppo, rl]
 excerpt_separator: <!--more-->
 ---
 
