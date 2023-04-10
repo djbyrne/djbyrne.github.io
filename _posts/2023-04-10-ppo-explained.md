@@ -113,4 +113,4 @@ Here are some more resources to help you learn more about PPO.
 
 **Hugging Face RL Course: Unit 8 Clipped Surrogate Objective:** [https://huggingface.co/deep-rl-course/unit8/clipped-surrogate-objective?fw=pt](https://huggingface.co/deep-rl-course/unit8/clipped-surrogate-objective?fw=pt)
 
-**CleanRL:** https://github.com/vwxyzjn/cleanrl
+**CleanRL:** [https://github.com/vwxyzjn/cleanrl](https://github.com/vwxyzjn/cleanrl)
