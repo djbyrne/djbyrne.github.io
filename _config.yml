@@ -7,8 +7,8 @@ gems:
 # THEME-SPECIFIC CONFIGURATION
 title: Donal Byrne                                   # site's title
 description: "Personal Blog"      # used by search engines
-avatar: assets/img/pexels/db_icon.png                         # Empty for no avatar in navbar
-favicon: assets/img/pexels/db_icon.png                             # Icon displayed in the tab
+avatar: assets/img/pexels/confused_robot_icon.png                       # Empty for no avatar in navbar
+favicon: assets/img/pexels/confused_robot_icon.png                        # Icon displayed in the tab
 
 # Header and footer text
 header_text: <h2> Welcome to my blog! <h2> <br />
