@@ -25,11 +25,9 @@ PPO achieves this by measuring how much the agent's policy has changed compared 
 
 ![Actor Critic Architecture: https://i0.wp.com/www.datahubbs.com/wp-content/uploads/2018/08/two_headed_network.png?w=790&ssl=1]({{ "/assets/img/posts/ppo-explained/actor_critic_arch.png" | relative_url}})
 
-PPO commonly utilises the Actor-Critic architecture, which consists of two neural networks: the Actor network and the Critic network. 
-
+PPO commonly utilises the Actor-Critic architecture, which consists of two neural networks: the Actor network and the Critic network.
 
 **Actor $$\pi(a|s)$$:**  network responsible for learning the policy (i.e., deciding which actions to take). This outputs a probability distribution over possible actions. The Actor's parameters are adjusted using gradient descent based on the feedback provided by the Critic.
-
 
 **Critic $$\hat{v}(s)$$:** network estimates the value function (i.e., evaluating how good it is to be in a given state). The value function represents the expected cumulative rewards from a given state, following the current policy. The Critic is usually another neural network that takes the state as input and predicts the state's value.
 
@@ -65,11 +63,7 @@ The equation above represents the clipped surrogate loss function, $$L^{CLIP}(\t
 2. The symbol $$\hat{E}_t$$ means we're taking an average over time, considering different moments when the agent makes decisions. This is refereed to as taking the expectation over time steps t.
     
     
-3. $$r_t(θ)$$ represents how different the new policy is compared to the old one. It's a ratio that tells us how likely the agent is to take a certain action under the new policy compared to the old policy. 
-    
-    This ratio is defined as $$\pi_{\theta}(a_t|s_t) / \pi_{\theta_{old}}(a_t|s_t)$$, where $$\pi_{\theta}(a_t|s_t)$$ denotes the probability of taking action $$a_t$$ given state $$s_t$$ under the policy with parameters $$\theta$$ at the time step $$t$$. 
-    
-    Notice that this ratio replaces the log probability in the original Policy Gradient Objective
+3. $$r_t(θ)$$ represents how different the new policy is compared to the old one. It's a ratio that tells us how likely the agent is to take a certain action under the new policy compared to the old policy. This ratio is defined as $$\pi_{\theta}(a_t|s_t) / \pi_{\theta_{old}}(a_t|s_t)$$, where $$\pi_{\theta}(a_t|s_t)$$ denotes the probability of taking action $$a_t$$ given state $$s_t$$ under the policy with parameters $$\theta$$ at the time step $$t$$. Notice that this ratio replaces the log probability in the original Policy Gradient Objective
     
 4. $$\hat{A}_t$$ measures how good an action is compared to the average action at a specific situation (state). A higher value means the action is expected to yield a better outcome. 
     
