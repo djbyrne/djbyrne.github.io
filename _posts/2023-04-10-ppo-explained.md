@@ -29,6 +29,7 @@ PPO commonly utilises the Actor-Critic architecture, which consists of two neura
 
 **Actor $\pi(a|s)$:**  network responsible for learning the policy (i.e., deciding which actions to take). This outputs a probability distribution over possible actions. The Actor's parameters are adjusted using gradient descent based on the feedback provided by the Critic.
 
+
 **Critic $\hat{v}(s)$:** network estimates the value function (i.e., evaluating how good it is to be in a given state). The value function represents the expected cumulative rewards from a given state, following the current policy. The Critic is usually another neural network that takes the state as input and predicts the state's value.
 
 The Actor-Critic method helps reduce the variance in gradient estimation, a common issue in Policy Gradient methods. It does so by utilising the Critic's value estimates to compute the "advantage" for each action taken, which represents how much better an action is compared to the average action in a given state, according to the Critic's estimation.
